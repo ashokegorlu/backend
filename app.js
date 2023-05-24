@@ -112,3 +112,7 @@ app.post("/login", async (req, res) => {
     res.status(404).json({ message: "No User Found" });
   }
 });
+
+app.get("/", (req, res) => {
+  res.status(200).json({ message: "server running" });
+});
